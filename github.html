@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repo Search</title>
+    <link rel="stylesheet" href="github.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Major+Mono+Display&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&family=Rubik+Glitch&family=Tiny5&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+
+
+</head>
+<body>
+    <div class="main">
+       <div class="text-content">
+        <h1><i class="fab fa-github"></i> GitHub Repo Search</h1>
+        <p>Enter your github details</p>
+       </div>
+        <div class="gitform">
+            <label class="gitlabel">GitHub Handle</label>
+            <input type="text" id="username" placeholder="Enter Github Handle" />
+            <label class="gitlabel">Repository Name</label>
+            <input type="text" id="repo" placeholder="Enter repository Name" />
+            <button
+                onclick="fetchGitHubRepo()">Fetch Repository</button>
+            <div class="repo-container" id="repo-container">Loading...</div>
+            
+            <div class="card-links">
+                <a href="#" target="_blank">.ritik</a>
+            </div>
+        </div>
+        
+        <script src="github.js"></script>   
+    </div>
+</body>
+</html>
+
+

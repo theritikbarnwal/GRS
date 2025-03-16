@@ -10,4 +10,4 @@ A web application that allows users to search for GitHub repositories by usernam
 - HTML  
 - CSS  
 - JavaScript  
-- GitHub API  
+- GitHub API

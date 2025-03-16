@@ -139,3 +139,78 @@ button:hover
 {
     color: #7e7ce2;
 }
+
+
+/*responsive*/
+
+
+/* Responsive Design */
+@media screen and (max-width: 777px) {
+
+    
+
+    .text-content h1 {
+        font-size: 30px;
+        
+
+    }
+
+    .text-content p {
+        font-size: 18px;
+    }
+
+    .gitform {
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .repo-container {
+        font-size: 14px;
+    }
+
+    .card-links a {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 666px) {
+    .text-content h1 {
+        font-size: 30px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+
+    .gitform {
+        padding: 15px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .repo-container {
+        font-size: 12px;
+    }
+
+
+    .card-links a {
+        font-size: 25px;
+        margin-left: auto;
+        display: inline-block; /* Ensure it behaves as a block */
+}
+}

@@ -21,12 +21,16 @@ async function fetchGitHubRepo() {
         if (response.ok) {
             document.getElementById("repo-container").innerHTML = `
                 <h2>LINK: <a href="${data.html_url}" target="_blank">${data.name}</a></h2>
+                <p><strong>Description:</strong> ${data.description || "No description available"}</p>
                 <p><strong>Git Repo:</strong> ${data.full_name}</p>
-                <p>${data.description || "No description available"}</p>
-                <p><strong>Watchers:</strong> 👀 ${data.watchers_count}</p>
-                <p><strong>Language:</strong> 🔍 ${data.language || "Not detected"}</p>
+                <p><strong>Watchers:</strong> ${data.watchers_count}</p>
+                <p><strong>Subscribers:</strong> ${data.subscribers_count}</p>
+                <p><strong>Language:</strong> ${data.language || "Not detected"}</p>
                 <p><strong>Forks:</strong> 🍴 ${data.forks_count}</p>
+                <p><strong>Created At:</strong> ${new Date(data.created_at).toLocaleDateString()}</p>
+                <p><strong>Last Push:</strong> ${new Date(data.pushed_at).toLocaleDateString()}</p>
                 <p><strong>Last Updated:</strong> ${new Date(data.updated_at).toLocaleDateString()}</p>
+                
                
                 <style>
                 .repo-container 
@@ -45,7 +49,7 @@ async function fetchGitHubRepo() {
                 strong, h2
                 {
                     color: #24acf0;;
-                    font-size: 1.5em;
+                    font-size: 22px;
                 }    
                 p
                 {

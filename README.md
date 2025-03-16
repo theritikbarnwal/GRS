@@ -11,3 +11,5 @@ A web application that allows users to search for GitHub repositories by usernam
 - CSS  
 - JavaScript  
 - GitHub API
+
+![image](https://github.com/user-attachments/assets/ccf4bf0b-5647-49ab-827b-f81537430637)
